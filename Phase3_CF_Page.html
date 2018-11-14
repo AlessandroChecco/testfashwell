@@ -1,5 +1,5 @@
-
 <html>
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 <head>
 <meta charset="utf-8">
 
@@ -532,20 +532,20 @@ $(document).ready(function () {
          e.preventDefault(); return false; 
       });
  
-      console.log("test");
+      console.log("test")
   addEventListener('DOMSubtreeModified', function (e) {
-    console.log(e.target);
-    console.log(e.target.tagName);
+    console.log(e.target)
+    console.log(e.target.tagName)
 	if(e.target.tagName.match("HTML") ){
-		console.log(e.target.className);
+		console.log(e.target.className)
 		if(e.target.className=='gr__render_figure-eight_io translated-rtl' || e.target.className=='gr__render_figure-eight_io translated-ltr' || e.target.className=="translated-ltr" || e.target.className=="translated-rtl") {
 			not_eng_worker = 1;
 			alert("page has been translated and translation was canceled");
 			console.log(not_eng_worker);
-			};
+			}
 		}
-	}, true);	
- 	      console.log("testdone");
+	}, true)
+ 	      console.log("testdone")
 
 
   $('#demo-form').parsley().on('form:submit', function(formInstance) {
